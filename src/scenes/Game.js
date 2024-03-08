@@ -1,28 +1,31 @@
 import { Scene } from 'phaser';
-
-export class Game extends Scene
+import 'phaser';
+export class Game extends Phaser.Scene
 {
     constructor ()
     {
         super('Game');
     }
+    preload(){
+        this.load.image('base', 'assets/tiles.png');
+        this.load.tilemapTiledJSON('tilemap', 'assets/map.json');
 
+    }
     create ()
     {
-        this.cameras.main.setBackgroundColor(0x00ff00);
+        const map = this.make.tilemap({ key: 'tilemap'});
+        const tileset = map.addTilesetImage('tilesetpok', 'base');
+        const debugG = this.add.graphics().setAlpha(0.75);
+        var worldlayer = map.createLayer('Ground', tileset).setCollisionByProperty({collides:true});
+        var layerR = map.createLayer('Road', tileset).setCollisionByProperty({collides:true});
+        var layerG = map.createLayer('Grass', tileset).setCollisionByProperty({collides:true});
+        var layerT = map.createLayer('Trees', tileset).setCollisionByProperty({collides:true});
+        var layerTt = map.createLayer('TTrees', tileset).setCollisionByProperty({collides:true});
+        
+        
+        
+    }
+    update(){
 
-        this.add.image(512, 384, 'background').setAlpha(0.5);
-
-        this.add.text(512, 384, 'Make something fun!\nand share it with us:\nsupport@phaser.io', {
-            fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
-            align: 'center'
-        }).setOrigin(0.5);
-
-        this.input.once('pointerdown', () => {
-
-            this.scene.start('GameOver');
-
-        });
     }
 }
