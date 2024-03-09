@@ -15,11 +15,11 @@ const config = {
         default:"arcade",
         arcade:{
         gravity:{ y:0},
-        debug:true,
+        debug:false,
     }
     },
     scale: {
-        mode: Phaser.Scale.FIT,
+        mode: Phaser.Scale.RESIZE,
         autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     scene: [
