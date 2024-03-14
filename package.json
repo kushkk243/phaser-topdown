@@ -13,7 +13,7 @@
     "bugs": {
         "url": "https://github.com/phaserjs/template-vite/issues"
     },
-    "homepage": "https://github.com/phaserjs/template-vite#readme",
+    "homepage": "https://kushkk243.github.io/phaser-topdown/",
     "scripts": {
         "dev": "vite",
         "build": "vite build --config vite/config.prod.mjs",
