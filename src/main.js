@@ -1,8 +1,4 @@
-
-import { Physics } from 'phaser';
 import { Game } from './scenes/Game';
-
-
 
 const config = {
     type: Phaser.AUTO,
