@@ -17,7 +17,7 @@ const phasermsg = () => {
 }   
 
 export default defineConfig({
-    base: './',
+    base: '/phaser-topdown/',
     logLevel: 'warning',
     build: {
         rollupOptions: {
