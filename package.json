@@ -1,6 +1,6 @@
 {
     "name": "template-vite",
-    "description": "A Phaser 3 template using Vite.",
+    "description": "A Phaser Top down implementation",
     "version": "1.2.1",
     "type": "module",
     "repository": {
@@ -15,10 +15,13 @@
     },
     "homepage": "https://github.com/phaserjs/template-vite#readme",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "dev": "vite --config vite/config.dev.mjs",
         "build": "vite build --config vite/config.prod.mjs"
     },
     "devDependencies": {
+        "gh-pages": "^6.1.1",
         "terser": "^5.28.1",
         "vite": "^5.1.4"
     },
