@@ -1,13 +1,13 @@
 {
     "name": "template-vite",
     "description": "A Phaser Top down implementation",
-    "version": "1.2.1",
+    "version": "1.0.0",
     "type": "module",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/phaserjs/template-vite.git"
+        "url": "git+https://kushkk243.github.io/phaser-topdown/"
     },
-    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+    "author": "Kush Kumar",
     "license": "MIT",
     "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
     "bugs": {
