@@ -15,9 +15,9 @@
     },
     "homepage": "https://github.com/phaserjs/template-vite#readme",
     "scripts": {
-        "dev": "vite --config vite/config.dev.mjs",
-        "build": "vite build --config vite/config.prod.mjs",
-        "serve": "vite preview --config vite/config.prod.mjs"
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
     },
     "devDependencies": {
         "gh-pages": "^6.1.1",
